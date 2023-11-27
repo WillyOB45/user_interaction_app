@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_project1/screens/auths/signup1.dart';
 import 'package:flutter_project1/widget/mybutton.dart';
 import 'package:flutter_project1/widget/smooth_page_indicator.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -54,7 +55,15 @@ class onboadingpage3 extends StatelessWidget {
               height: 5,
             ),
 
-            mybutton(),
+            GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => signup1(),
+                      ));
+                },
+                child: mybutton()),
           ],
         ),
       ),

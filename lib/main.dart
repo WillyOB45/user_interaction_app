@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_project1/controller/onboadingmain.dart';
+import 'package:flutter_project1/screens/auths/signup1.dart';
 
 void main() {
   runApp(myApp());
@@ -13,7 +14,10 @@ class myApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       initialRoute: "/",
-      routes: {"/": (context) => onboadingmain()},
+      routes: {
+        "/": (context) => onboadingmain(),
+        "/signup1": (context) => signup1()
+      },
     );
   }
 }
