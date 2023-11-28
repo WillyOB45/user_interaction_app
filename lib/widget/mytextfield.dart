@@ -1,13 +1,8 @@
 import 'package:flutter/material.dart';
 
-class mytextfields extends StatefulWidget {
+class mytextfields extends StatelessWidget {
   const mytextfields({super.key});
 
-  @override
-  State<mytextfields> createState() => _mytextfieldsState();
-}
-
-class _mytextfieldsState extends State<mytextfields> {
   @override
   Widget build(BuildContext context) {
     return Center(

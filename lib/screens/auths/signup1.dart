@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_project1/widget/mytextfield.dart';
+// import 'package:flutter_project1/widget/mytextfield.dart';
 // import 'package:cupertino_icons/cupertino_icons.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -45,7 +45,7 @@ class signup1 extends StatelessWidget {
                 fontSize: (16),
               ),
               // email text field
-              mytextfields(),
+              // mytextfields(),
 
               //password textfield
             ),
