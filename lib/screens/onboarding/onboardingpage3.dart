@@ -63,7 +63,9 @@ class onboadingpage3 extends StatelessWidget {
                         builder: (context) => signup1(),
                       ));
                 },
-                child: mybutton()),
+                child: mybutton(
+                  buttoname: "Get started",
+                )),
           ],
         ),
       ),

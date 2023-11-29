@@ -57,7 +57,9 @@ class onboadingpage2 extends StatelessWidget {
             ),
 
             // buttom
-            mybutton(),
+            mybutton(
+              buttoname: "Get started",
+            ),
           ],
         ),
       ),

@@ -4,8 +4,8 @@ import 'package:flutter_project1/widget/mytextfield.dart';
 // import 'package:cupertino_icons/cupertino_icons.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class signup1 extends StatelessWidget {
-  const signup1({super.key});
+class signup2 extends StatelessWidget {
+  const signup2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +34,7 @@ class signup1 extends StatelessWidget {
 
               // signup heading
               Text(
-                "Sign up",
+                "What’s your name?",
                 style: GoogleFonts.workSans(
                     color: Color(0xff1E1D34),
                     fontSize: (35),
@@ -46,7 +46,7 @@ class signup1 extends StatelessWidget {
 
               // signup subtitle
               Text(
-                "It is good to have you here, sign up to enjoy nice experiencewith others",
+                "Members here use their real names to build trust and community.",
                 style: GoogleFonts.lato(
                   color: Color(0xff434255),
                   fontSize: (20),
@@ -56,56 +56,33 @@ class signup1 extends StatelessWidget {
                 height: 30,
               ),
 
-              //email
+              //first name
               mytextfields(
-                hintText: "Johndoe@gmail.com",
+                hintText: "Enter first name",
                 obscureText: false,
                 // Text: Text("Email"),
-                suffix: Icon(Icons.email_sharp),
+                suffix: Icon(Icons.person_3_sharp),
               ),
               SizedBox(
                 height: 40,
               ),
 
-              //password
+              //last name
 
               mytextfields(
-                hintText: "Enter password",
-                obscureText: true,
-                // Text: Text("Passwood"),
-                suffix: Icon(Icons.remove_red_eye_sharp),
+                hintText: "Enter last name",
+                obscureText: false,
+                // Text: Text("passwood"),
+                suffix: Icon(Icons.person_3_sharp),
               ),
               SizedBox(
                 height: 20,
               ),
-              Row(
-                children: [
-                  //text
-                  Text("Already have an account",
-                      style: GoogleFonts.lato(
-                        color: Color(0xff434255),
-                        fontSize: (20),
-                      )),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Text("Login",
-                      style: GoogleFonts.lato(
-                        color: Color(0xff5BA551),
-                        fontSize: (20),
-                      )),
-                ],
-              ),
               SizedBox(
-                height: 260,
+                height: 290,
               ),
-              GestureDetector(
-                onTap: () {
-                  Navigator.pushNamed(context, "/signup2");
-                },
-                child: mybutton(
-                  buttoname: "Continue",
-                ),
+              mybutton(
+                buttoname: "Continue",
               )
             ],
           ),

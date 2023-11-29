@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 // import 'package:flutter_project1/controller/onboadingmain.dart';
 import 'package:flutter_project1/screens/auths/signup1.dart';
+import 'package:flutter_project1/screens/auths/signup2.dart';
 import 'package:flutter_project1/screens/splash_screen/splashscreen.dart';
 
 void main() {
@@ -17,7 +18,8 @@ class myApp extends StatelessWidget {
       initialRoute: "/",
       routes: {
         "/": (context) => splashSreen(),
-        "/signup1": (context) => signup1()
+        "/signup1": (context) => signup1(),
+        "/signup2": (context) => signup2(),
       },
     );
   }
