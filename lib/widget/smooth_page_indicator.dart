@@ -5,14 +5,14 @@ import 'package:flutter_project1/screens/onboarding/onboardingpage3.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class mydotindicator extends StatefulWidget {
-  int selectedpage = 0;
+  int _selectedpage = 0;
 
   List pages = [
     onboadingpage1(),
     onboadingpage2(),
     onboadingpage3(),
   ];
-  mydotindicator({super.key});
+  mydotindicator({super.key,});
 
   @override
   State<mydotindicator> createState() => _mydotindicatorState();
@@ -23,7 +23,7 @@ class _mydotindicatorState extends State<mydotindicator> {
   Widget build(BuildContext context) {
     return Center(
       child: SmoothPageIndicator(
-          controller: PageController(initialPage: 0), // PageController
+          controller: controller, // PageController
           count: 3,
           effect: JumpingDotEffect(
               dotHeight: 8,

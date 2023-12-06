@@ -4,16 +4,17 @@ import 'package:flutter_project1/screens/onboarding/onboardingpage2.dart';
 import 'package:flutter_project1/screens/onboarding/onboardingpage3.dart';
 
 class onboadingmain extends StatelessWidget {
-  final _controller = PageController();
+  PageController controller = PageController();
 
   onboadingmain({
     super.key,
+    required this.controller
   });
 
   @override
   Widget build(BuildContext context) {
     return PageView(
-      controller: _controller,
+      controller: controller,
       children: [
         onboadingpage1(),
         onboadingpage2(),
